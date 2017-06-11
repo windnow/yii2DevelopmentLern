@@ -4,9 +4,21 @@
 # Perform tests in browser using the WebDriver or PhpBrowser.
 # If you need both WebDriver and PHPBrowser tests - create a separate suite.
 
+# Исходное содержимео
 actor: AcceptanceTester
 modules:
     enabled:
         - PhpBrowser:
-            url: http://localhost/myapp
+            url: http://project.loc
         - \Helper\Acceptance
+
+# содержимео по книге
+#class_name: AcceptanceTester
+#modules:
+#    enabled:
+#        - PhpBrowser
+#        - WebHelper
+#    config:
+#        PhpBrowser:
+#            url: 'http://project.loc'
+#            
